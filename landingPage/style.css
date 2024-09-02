@@ -53,8 +53,8 @@ body{
 }
 
 #nav h3{
-    letter-spacing: -.1vw;
-    
+    font-size: -.1vw;
+    letter-spacing: -.1vw; 
 }
 #nav2 {
   display: flex;
@@ -114,7 +114,7 @@ body{
     rotate: 20deg;
 }
 
-#footer{
+#heroFooter{
     padding: 0 20px;
     margin-top: 9vw;
     width: 55%;
@@ -122,11 +122,11 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-#footer,#footer2 h4{
+#heroFooter,#heroFooter2 h4{
     font-size: 1.3vw;
     letter-spacing: -.1vw;
 }
-#footer2{
+#heroFooter2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,24 +134,45 @@ body{
 }
 
 /* pagethird */
+
+
 #pageThird{
-    /* background-color: red; */
-    margin-top: 10vw;
-    padding: 0 40px;
+    margin-top:15vw;
+    padding: 0 5vw;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; /* for preventing the image to overflow bcoz of scaling the image */
+}
+#content{
+    /* padding-left: 2.7vw; */
+    width: 40%;
+}
+#content h5{
+    font-size: 2vw;
+    line-height: 5vw;
+    letter-spacing: -.1vw;
+}
+#content h5::selection{
+    background-color: rgb(143, 145, 143);
+    color: rgb(220, 216, 216);
 }
 #content p{
-    width: 70%;
+    text-align:left;
+    line-height: 1.9vw;
+    width: 100%;
+    font-size: 1.1vw;
+    letter-spacing: .1vw;
+
+
+}
+#content p::selection{
+    background-color: rgb(143, 145, 143);
+    color: rgb(220, 216, 216);
 }
 #imgdiv{
-    /* padding: 0 6vw ; */
     height: 100%;
     width: 40%;
-    position: relative;
-    transform: translateX(-10%);
 }
 
 #imgdiv img{
@@ -160,12 +181,68 @@ body{
     object-fit: cover;
     scale:1.2;
 }
+/* pageFour */
 
-
-
-/* pagefour */
-#pagefour{
-    margin-top: 10vw;
+#pageFour{
+    /* background-color: red; */
+    margin-top: 5vw;
+    padding-bottom: 2vw;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    overflow: hidden; /* for preventing the image to overflow bcoz of scaling the image */
+}
+#pageFcontent{
+    width: 40%;
+}
+#pageFcontent h5{
+    text-align:end;
+    padding-right: 5vw;
+    font-size: 2vw;
+    line-height: 5vw;
+    letter-spacing: -.1vw;
+}
+#pageFcontent h5::selection{
+    background-color: rgb(143, 145, 143);
+    color: rgb(220, 216, 216);
+}
+#pageFcontent p{
+    text-align:right;
+    line-height: 1.9vw;
+    width: 100%;
+    font-size: 1.1vw;
+    letter-spacing: .1vw;
+
+}
+#pageFcontent p::selection{
+    background-color: rgb(143, 145, 143);
+    color: rgb(220, 216, 216);
+}
+#pageFimgdiv{
+    /* padding: 0 1.1vw; */
     height: 100%;
+    width: 40%;
+}
+
+#pageFimgdiv img{
+    /* padding-left: 3vw; */
+    height: 640px;
+    width: 460px;
+    object-fit: cover;
+    scale:1.2;
+}
+
+#box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   min-height:30vh;
+    
+}
+#box h2{
+    text-transform: capitalize;
+    color: rgb(151, 148, 148);
+    font-size: 1.2vw;
 }

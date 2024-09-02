@@ -56,7 +56,7 @@ tl.from("#headings img",{
 
 })
 
-tl.from("#footer h4", {
+tl.from("#heroFooter h4", {
     y:10,
     duration:.8,
     delay:.1,
@@ -76,4 +76,16 @@ tl.to("#pageSec h4", {
         scrub: 2, 
         pin: true // Use Boolean value directly
     }
+});
+
+gsap.to("#box h2", {
+  scale: 2, // Zoom in (2x size)
+  scrollTrigger: {
+    trigger: "#box",
+    scroller: "#scrollWrapper", 
+    start: "top bottom ", 
+    end: "top top", 
+    scrub: true, 
+  
+  }
 });

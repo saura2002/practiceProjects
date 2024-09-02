@@ -2,21 +2,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
+  background-color: black;
+  color: rgb(160, 170, 179);
+}
+body{
+    overflow-x:hidden ;
 }
 
 #main {
   font-family:Georgia, 'Times New Roman', Times, serif;
   width: 100%;
   height: 100%;  
-  background-color: black;
-  color: rgb(160, 170, 179);
 }
+
+#hero{
+    width: 100%;
+    height: 100%;
+}
+
+#pageSec{
+    margin-top: 10vw;
+    width: 100%;
+    height: 100%;
+}
+
+#pageSec h4{
+    font-weight: 600;
+    font-size: 33vw;
+    letter-spacing:-.4vw;
+}
+
+
 
 #nav {
   font-weight: 100;
@@ -28,6 +51,7 @@ body {
   justify-content: space-between;
   padding: 0px 20px;
 }
+
 #nav h3{
     letter-spacing: -.1vw;
     
@@ -48,6 +72,7 @@ body {
     line-height: 7.2vw;
 
 }
+
 #main h1{
     color: rgb(200, 199, 199);
     letter-spacing: .1vw;
@@ -59,24 +84,27 @@ body {
     padding-left: 6.5vw;
     margin-top: 10vw;
 }
+
 #main h1:nth-child(2){
     text-align: center;
     padding-right: 10vw;
 
 }
+
 #main h1:nth-child(3){
     padding-left: 15vw;
 
     text-align: center;
 }
 
-img{
+#headings img{
     height: 400px;
     position: absolute;
-    top: 16%;
+    top: 5%;
     left: 40%;
 
 }
+
 #img1{
     rotate: 10deg;
 
@@ -103,4 +131,41 @@ img{
     flex-direction: column;
     align-items: center;
    justify-content: center;
+}
+
+/* pagethird */
+#pageThird{
+    /* background-color: red; */
+    margin-top: 10vw;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+#content p{
+    width: 70%;
+}
+#imgdiv{
+    /* padding: 0 6vw ; */
+    height: 100%;
+    width: 40%;
+    position: relative;
+    transform: translateX(-10%);
+}
+
+#imgdiv img{
+    height: 640px;
+    width: 460px;
+    object-fit: cover;
+    scale:1.2;
+}
+
+
+
+/* pagefour */
+#pagefour{
+    margin-top: 10vw;
+    width: 100%;
+    height: 100%;
 }

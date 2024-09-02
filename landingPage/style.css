@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  height: 100%;  
+  background-color: black;
+  color: rgb(160, 170, 179);
+}
+
+#nav {
+  font-weight: 100;
+  text-transform: capitalize;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+#nav h3{
+    letter-spacing: -.1vw;
+    
+}
+#nav2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+
+#headings{
+    padding-left: 10vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 100%;
+    font-size: 3.8vw;
+    line-height: 7.2vw;
+
+}
+#main h1{
+    color: rgb(200, 199, 199);
+    letter-spacing: .1vw;
+    position: relative;
+    z-index: 9;
+}
+
+#main h1:nth-child(1){
+    padding-left: 6.5vw;
+    margin-top: 10vw;
+}
+#main h1:nth-child(2){
+    text-align: center;
+    padding-right: 10vw;
+
+}
+#main h1:nth-child(3){
+    padding-left: 15vw;
+
+    text-align: center;
+}
+
+img{
+    height: 400px;
+    position: absolute;
+    top: 16%;
+    left: 40%;
+
+}
+#img1{
+    rotate: 10deg;
+
+}
+
+#img2{
+    rotate: 20deg;
+}
+
+#footer{
+    padding: 0 20px;
+    margin-top: 9vw;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer,#footer2 h4{
+    font-size: 1.3vw;
+    letter-spacing: -.1vw;
+}
+#footer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+}
